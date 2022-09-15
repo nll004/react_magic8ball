@@ -1,0 +1,29 @@
+.EightBall-container {
+    width: 60vw;
+    height: 60vh;
+    position: relative;
+    left: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.EightBall-ball {
+    background-color: black;
+    width: 350px;
+    height: 350px;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.EightBall-question {
+    color: whitesmoke;
+    font: 1.5rem Georgia, serif;
+}
+
+.answer {
+    background-color: green;
+}
