@@ -9,10 +9,9 @@
 }
 
 .EightBall-ball {
-    background-color: black;
     width: 350px;
     height: 350px;
-    border: 1px solid black;
+    border: 1px solid white;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -22,8 +21,4 @@
 .EightBall-question {
     color: whitesmoke;
     font: 1.5rem Georgia, serif;
-}
-
-.answer {
-    background-color: green;
 }

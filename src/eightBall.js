@@ -1,17 +1,18 @@
 import {useState} from "react";
+import {getText, ballText} from "./answers.js"
 import "./eightBall.css"
 
 const EightBall = () => {
-    const [isActive, setToActive] = useState(false)
+    const [index, changeIndex] = useState(0);
 
-    function toggleAnswer(e) {
-        setToActive(current => !current)
+    function toggleAnswer() {
+        changeIndex(index !== 0 ? 0 : getText)
     }
 
     return (
         <div className="EightBall-container">
-            <div className={isActive ? "EightBall-ball answer" : "EightBall-ball"} onClick={toggleAnswer}>
-                <p className="EightBall-question">Think of a Question</p>
+            <div className="EightBall-ball" onClick={toggleAnswer} style={{backgroundColor : ballText[index].color}}>
+                <p className="EightBall-question">{ballText[index].msg}</p>
             </div>
         </div>
     )
